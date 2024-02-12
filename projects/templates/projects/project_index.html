@@ -1,0 +1,27 @@
+<!-- projects/templates/projects/project_index.html -->
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="container text-center">
+    <h1 class="text-light font-weight-bold display-3 mb-5">Personal Portfolio</h1>
+    <p class="lead text-light fs-4 mb-5">Welcome to my personal portfolio website. I am George Stamatis and here, you can explore my smaller projects from online courses and learn more about my skills and experience.</p>
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                {% if project.image %}
+                <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
+                {% else %}
+                <div class="placeholder-image"></div>
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a href="{% url 'project_detail' project.pk %}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

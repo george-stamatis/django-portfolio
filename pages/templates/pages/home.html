@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head %}
+    <title>Personal Portfolio</title>
+    
+    
+{% endblock head %}
+{% block page_content %}
+<div class="container text-center">
+    <h1 class="text-light font-weight-bold display-3 ">Personal Portfolio</h1>
+    <p class="lead text-light fs-4">Welcome to my personal portfolio website. Here, you can explore my projects and learn more about my skills and experience.</p>
+    <a href="{% url 'project_index' %}" class="btn bg-light btn-lg btn-transparent">View Projects</a>
+</div>
+
+{% endblock page_content %}
