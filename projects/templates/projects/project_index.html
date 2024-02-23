@@ -18,7 +18,7 @@
     <div class="row">
         {% for project in projects %}
         <div class="col-md-4 mb-4">
-            <div class="card h-100 d-flex flex-column bg-light ">
+            <div class="card h-100 d-flex flex-column bg-light border-dark">
                 {% if project.image %}
                 <img class="card-img-top" src="{{ project.image.url }}" alt="{{ project.title }}">
                 {% else %}
