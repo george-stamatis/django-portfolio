@@ -6,8 +6,18 @@
 {% endblock head %}
 {% block page_content %}
 <div class="container text-center">
-    <h1 class="text-light font-weight-bold display-3 ">Personal Portfolio</h1>
-    <p class="lead text-light fs-4">Welcome to my personal portfolio website. Here, you can explore my projects and learn more about my skills and experience.</p>
+    <h1 class="text-light font-weight-bold display-3 mb-3">Personal Portfolio</h1>
+    <!-- Personal Contact Segment -->
+    <div class="personal-contact text-right mb-4">
+        <p class="text-light">
+            <a href="mailto:georgios.m.stamatis@gmail.com" class="text-light">georgios.m.stamatis@gmail.com</a>
+            <a href="https://www.linkedin.com/in/georgios-stamatis/" class="text-light ml-2" target="_blank">LinkedIn</a>
+            <a href="https://github.com/george-stamatis" class="text-light ml-2" target="_blank">GitHub</a>
+            <a href="/path/to/your/cv.pdf" class="text-light ml-2" target="_blank">Download CV</a>
+        </p>
+    </div>
+    <img src="{media/face_image/cv1_ZxMLjbF.jpg}" alt="Your Image" class="img-fluid mb-4">
+    <p class="lead text-light fs-5 mb-5">Welcome to my personal portfolio website.<br> I am George Stamatis and here you can explore my smaller projects <br> from online courses and learn more about my skills and experience.</p>
     <a href="{% url 'project_index' %}" class="btn bg-light btn-lg btn-transparent">View Projects</a>
 </div>
 
