@@ -1,11 +1,10 @@
-# pages/views.py
-
 from django.shortcuts import render
-from pages.models import Home
+from .models import Home  # Import the Home model
 
 def home(request):
-    image = Home.objects.all()
+    # Retrieve the Home object from the database (assuming there is only one)
+    home = Home.objects.first()  # Assuming there is only one Home object
     context = {
-        "image": image
+        "home": home  # Pass the Home object to the template context
     }
     return render(request, "pages/home.html", context)

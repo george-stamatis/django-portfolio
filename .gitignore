@@ -1,5 +1,8 @@
-# Ignore virtual environment
+# .gitignore
+__pycache__
 venv/
 env/
 .venv/
 /.vscode/
+.pytest_cache
+.coverage
