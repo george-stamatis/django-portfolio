@@ -1,6 +1,6 @@
 # Personal Portfolio Website with Django
 
-![Project Image](screenshots/Screenshot 2024-03-19 180012.png)
+![Project Image](https://github.com/george-stamatis/django-portfolio/blob/main/screenshots/Screenshot%202024-03-19%20180012.png)
 
 ## Description
 
@@ -21,4 +21,5 @@ This project is a personal portfolio website developed using Django. It showcase
 - Admin page for content management
 
 ## Screenshots
-
+![Project page](https://github.com/george-stamatis/django-portfolio/blob/main/screenshots/Screenshot%202024-03-19%20180103.png)
+![Project detail](https://github.com/george-stamatis/django-portfolio/blob/main/screenshots/Screenshot%202024-03-19%20180822.png)
