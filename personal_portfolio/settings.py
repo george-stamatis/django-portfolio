@@ -29,7 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['p01--django--5bv8d5qycw54.code.run', '127.0.0.1', 'localhost']
 
-MEDIA_ROOT = BASE_DIR / "uploads/"
+MEDIA_ROOT = BASE_DIR / "productionfiles" / "uploads"
 
 MEDIA_URL = "media/"
 
