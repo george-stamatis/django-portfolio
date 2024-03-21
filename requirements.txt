@@ -8,9 +8,11 @@ idna==3.6
 packaging==23.2
 psutil==5.9.8
 python-decouple==3.8
+python-dotenv
 requests==2.31.0
 sqlparse==0.4.4
 termcolor==2.4.0
 tqdm==4.66.2
 tzdata==2024.1
 urllib3==2.2.0
+
