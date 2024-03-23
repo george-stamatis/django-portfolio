@@ -29,9 +29,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['p01--django--5bv8d5qycw54.code.run', '127.0.0.1', 'localhost']
 
-MEDIA_ROOT = BASE_DIR / "productionfiles" / "uploads"
+MEDIA_ROOT = BASE_DIR / "static" / "uploads"
 
-MEDIA_URL = "media/"
+MEDIA_URL = "static/"
 
 
 
@@ -53,8 +53,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',    
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
