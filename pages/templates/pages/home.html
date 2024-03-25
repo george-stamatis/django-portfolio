@@ -16,8 +16,7 @@
     </div>
     <div class="d-flex justify-content-center align-items-center mt-3">
         <div class="rounded-circle overflow-hidden" style="width: 380px; height: 250px;">
-            {% load static %}
-            <img src="{% static 'uploads\face_image\cv.jpg' %}" alt="Home Image" class="img-fluid">
+            <img src="{{ home.image.url }}" alt="Home Image" class="img-fluid">
         </div>
     </div>
     <p class="lead text-light fs-5 mt-3">Welcome to my personal portfolio website.<br> I am George Stamatis and here you can explore my smaller projects <br> from online courses and learn more about my skills and experience.</p>

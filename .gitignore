@@ -7,3 +7,4 @@ env/
 /.vscode/
 .pytest_cache
 .coverage
+docker-compose.yml
