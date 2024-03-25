@@ -29,7 +29,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['p01--django--fmd8y9b9q4tf.code.run', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['p01--django--5bv8d5qycw54.code.run', '127.0.0.1', 'localhost']
 
 #MEDIA_ROOT = BASE_DIR / "uploads/"
 
