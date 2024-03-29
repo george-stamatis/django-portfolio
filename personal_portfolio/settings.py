@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['p01--django--5bv8d5qycw54.code.run', '127.0.0.1', 'localhost']
 
 #MEDIA_ROOT = BASE_DIR / "uploads/"
